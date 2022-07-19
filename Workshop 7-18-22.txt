@@ -1,0 +1,79 @@
+THE UNIX SHELL
+USE CONTROL + C TO CLOSE/EXIT ANYTHING
+DRY RUN IN GIT (USE -N)
+git add -n *
+
+pwd (print working directory)
+ls (list of files)
+ls -lh (list of files in columns)
+cd (change directory)
+cd Desktop
+	pwd
+		c/Users/Mark/Desktop
+cd .. (go back up in directory)
+cd - (go back to previous directory)
+cd (will take you back to home)
+
+APPLE USERS
+man ls (HELP find out more information about a command and its arguments) 
+WINDOWS USERS
+ls --help
+
+EXPLAINSHELL.COM
+
+HOW TO SORT BY SIZE
+ls - lS
+
+GO TO A RELATIVE PATH (GOES FROM WHERE YOU ARE)
+cd lcw2022/shell-lesson
+
+GO TO AN ABSOLUTE PATH (GOES NO MATTER WHERE YOU ARE)
+cd /c/Users/Mark/Desktop/lcw2022/
+
+MAKE A DIRECTORY CALLED "firstdir"
+makedir firstdir
+
+TAB COMPLETION (PREVENTS TYPOS OR MAYBE I'M NOT IN THE RIGHT PLACE)
+Desktop/lcw2022/shell-lesson
+cd firstdir/
+
+OPEN A FILE
+cat 829-0.txt
+
+PREVIEW A HEAD OR TAIL OR LESS TO PAGE THROUGH A FILE
+head 829-0.txt
+tail 829-0.txt
+less 829-0.txt
+
+SEE HEAD OF MULTIPLE FILES
+head 829-0.txt 33504-0.txt
+
+HEADS OF MULTIPE FILES THAT END WITH ".txt"
+head *.txt
+
+MOVE (RENAME) 829-0.txt TO gulliver.txt
+mv 829-0.txt gulliver.txt
+
+COPY ORIGIANL FILE FIST FOLLOWED BY COPY
+cp gulliver.txt gulliver-backup.txt
+
+MOVE gulliver-backup.txt TO backup FOLDER WHILE IN shell-lesson folder
+mv gulliver-backup.txt backup
+
+PRINT HISTORY INTO A HISTORY FILE
+history > history.txt
+
+ECHO GIVES YOU FEEDBACK OF WHAT IS SAVED IN VARIABLE
+NAME="Mark"
+echo "$NAME is a fantastic library carpentry student."
+
+echo "It is always sunny in Texas. Today it is" $(date)
+It is always sunny in Texas. Today it is Mon Jul 18 09:30:14 CDT 2022
+
+
+LOOPS
+touch a.txt b.txt c.txt .txt
+
+for filename in ?.txt
+	do 
+	echo "

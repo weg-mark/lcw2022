@@ -1,0 +1,58 @@
+    1  pwd
+    2  ls
+    3  ls -lh
+    4  cd Desktop
+    5  pwd
+    6  cd -
+    7  cd -
+    8  cd lcw2022
+    9  cd -
+   10  cd -
+   11  cd shel-lesson
+   12  cd shell-lesson
+   13  cd ..
+   14  cd -
+   15  ls --help
+   16  cd ..
+   17  ls
+   18  cd ..
+   19  cd lcw2022/shell-lesson
+   20  cd /c/Users/Mark/Desktop/lcw2022
+   21  cd shell-lesson
+   22  mkdir firstdir
+   23  ls
+   24  cd ..
+   25  cd shell-lesson
+   26  cd -lh
+   27  ls -lh
+   28  cat 829-0.txt
+   29   head 829-0.txt
+   30  less 829-0.txt
+   31  less 829-0.txt
+   32  head *.txt
+   33  mv 829-0.txt gulliver.txt
+   34  ls
+   35  cp gulliver.txt gulliver-backup.txt
+   36  ls
+   37  mv firstdir backup
+   38  ls
+   39  mv gulliver-backup.txt backup
+   40  ls backup
+   41  history > history.txt
+   42  ls
+   43  head history.txt
+   44  echo "Library Carpentry is awesome!"
+   45  NAME="Mark"
+   46  echo "$NAME is a fantastic library carpentry student."
+   47  echo "It is always sunny in Text. Today it is" $(date)
+   48  cd backup
+   49  rm gulliver-backup.txt
+   50  ls
+   51  cd ..
+   52  cp gulliver.txt gulliver-backup.txt
+   53  ls
+   54  mv gulliver-backup.txt backup
+   55  cd backup
+   56  ls
+   57  cd ..
+   58  history > history.txt
